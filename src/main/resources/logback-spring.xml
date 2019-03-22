@@ -3,7 +3,6 @@
     ​
     <springProperty scope="context" name="appName" source="spring.application.name"/>
     ​
-    <!-- Appender to log to file in a JSON format -->
     <appender name="logstash" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_FILE}.json</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
